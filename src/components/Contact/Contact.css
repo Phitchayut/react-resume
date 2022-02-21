@@ -1,0 +1,115 @@
+.c {
+    height: 100vh;
+    position: relative;
+}
+
+.c-bg {
+    width: 20px;
+    height: 100%;
+    background-color: #59b256;
+    position: absolute;
+}
+.c-wrapper {
+    padding: 50px;
+    
+    display: flex;
+}
+.c-left {
+    flex: 1;
+
+}
+.c-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-title {
+    font-size: 60px;
+    width: 80%;
+}
+
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    font-weight: 300;
+    width: 70%;
+}
+
+.c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+form {
+    margin-top: 20px;
+}
+input{
+    width: 60%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+textarea{
+   width: 80%;
+   margin: 10px 0px;
+   font-size: 14px;
+   padding-left: 10px;
+}
+button{
+    display: flex;
+    border: none;
+    padding: 10px 190px;
+    background-color: #59b256;
+    border-radius: 2px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .c-wrapper {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+    .c-title{
+        font-size: 30px;
+    }
+    .c-info-item{
+        margin: 20px 0px;
+        width: 100%;
+    }
+    .c-desc {
+        display: none;
+    }
+    form{
+        margin-top: -5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input{
+        width: 41%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0;
+    }
+    .email {
+        width: 86%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0;
+    }
+    button {
+        margin-bottom: 10px;
+        padding: 7px 102px;
+    }
+    textarea {
+        width: 86%;
+    }
+}
